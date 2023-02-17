@@ -1,0 +1,15 @@
+MySQL transcription table schema
+
+CREATE TABLE `intent` (
+	`uuid` VARCHAR(255) NOT NULL,
+	`transcription_id` VARCHAR(255) NOT NULL,
+	`transcript` TEXT(1000),
+	`file_name` VARCHAR(255),
+	`chunk_num` TINYINT,
+	`channel` TINYINT,
+	`duration` TIME,
+	`predicted_label` TINYINT,
+    `predicted_intent` VARCHAR(255),
+	`probability` TINYINT
+    
+);
